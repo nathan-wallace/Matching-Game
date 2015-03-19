@@ -1,0 +1,259 @@
+/*!
+ * Matching Game v1
+ *
+ * Copyright 2014 1st American Systems and Services, Inc
+ *
+ * Designed and built by 1st American Multi-Media Team.
+ */
+ 
+ 
+/* FIX Bootstrap Row */
+#rightSide :first-child{
+	margin-left: 2.127659574468085%;
+}
+
+body{
+	background: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+	background:#fff;
+}
+
+h1{
+	font-weight:bold;
+}
+
+p{
+	font-size:18px;
+}
+
+h1, p{
+	color:#0371bd;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#finished{
+	margin-top:40%;
+}
+
+.gray{
+	color:#333;
+}
+
+
+.answerBox{
+	margin:2%;
+	padding:5% 0;
+	height:116px;
+	box-sizing:border-box;
+	position: relative;
+	display:inline-block;
+	line-height:126px;
+	background:#0371bd;
+	border:#fff solid 1px;
+	
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.answerBox p{
+	padding:10% 5%;
+	text-align:center;
+    vertical-align: middle;
+    line-height: normal; 
+	color:#fff;
+	font-size:14px;
+}
+
+.clicked, .answerBox:hover{
+	border: #0371bd solid 1px;
+	-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.clickable2{
+}
+
+.clicked2, .clickable2:hover{
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	background:#0371bd;
+	border: #fff solid 1px;
+	padding:1%;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.matched{
+	opacity:.5;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,.75));
+	box-shadow: 0px 0px 10px 0px rgba(255,255,255,.75);
+}
+
+.answerBox:active{
+	border: #0371bd solid 1px;
+	/*margin-left:14px;
+	box-sizing:border-box;*/
+}
+
+.answerBox:focus{
+	border: #0371bd solid 1px;
+	/*margin-left:14px;
+	box-sizing:border-box;*/
+}
+
+#questionBox{
+	margin-top:-30px;
+	background-image:url(../media/images/LV_ICC_box_b_NO-LABELS.png);
+	position:relative;
+	height:505px;
+	z-index:1;
+}
+
+.question{
+	margin:0px;
+	padding:0px; 
+	height:auto;
+}
+.question img{
+	padding:1%;
+	position:absolute;
+	z-index:2;
+}
+
+.feedbackBox{
+	color:#0371bd;
+	font-size:36px;
+	font-weight:bold;
+	padding:7% 0;
+	width:79%;
+}
+	
+	
+/* Image layout*/
+#doorInterlock{
+	top:77px;
+	left:347px;
+	z-index:2;
+	width:58px;
+	height:58px;
+}
+
+#powerLed{
+	top:70px;
+	left:326px;
+	z-index:2;
+	width:17px;
+	height:17.5px;
+}
+
+#powerToggle1{
+	top:96px;
+	left:326px;
+	z-index:2;
+	width:23px;
+	height:18px;
+}
+
+#powerToggle2{
+	top:117px;
+	left:326px;
+	z-index:2;
+	width:23px;
+	height:19px;
+}
+
+#rotarySwitch{
+	top:251px;
+	left:340px;
+	z-index:2;
+	width:24px;
+	height:34px;
+}
+
+#menuImg1{
+	top:300px;
+	left:326px;
+	z-index:2;
+	width:12px;
+	height:12.5px;
+}
+
+#menuImg2{
+	top:300px;
+	left:346px;
+	z-index:2;
+	width:12px;
+	height:12.5px;
+}
+
+#menuImg3{
+	top:300px;
+	left:367px;
+	z-index:2;
+	width:12px;
+	height:12.5px;
+}
+
+#itemImg{
+	top:227px;
+	left:345px;
+	z-index:2;
+	width:12px;
+	height:12.5px;
+}
+
+/* END Image layout*/
+/*
+@media(max-width:480px){
+.answerBox:hover{
+	border:#333 solid 4px; 
+	margin-left:0px;
+	height:126px;
+	box-sizing:border-box;
+}
+}
+
+
+@media(max-width:767px){
+
+}
+
+@media(min-width:768px) and (max-width:979px){
+.answerBox:hover{
+	border:#333 solid 4px; 
+	margin-left:10px;
+	padding:5% 0;
+	height:126px;
+	box-sizing:border-box;
+}
+}
+
+@media(min-width:980px){
+.answerBox:hover{
+	border:#333 solid 4px; 
+	margin-left:10px;
+	padding:5% 0;
+	height:126px;
+	box-sizing:border-box;
+}	
+}
+
+@media(min-width:1200px){
+.answerBox:hover{
+	border:#333 solid 4px; 
+	margin-left:14px;
+	padding:5% 0;
+	height:126px;
+	box-sizing:border-box;
+}
+}
+*/

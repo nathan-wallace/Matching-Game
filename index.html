@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="1st American Matching Game">
+    <meta name="author" content="1st American Systems & Services">
+
+    <title>LDIN Matching Game</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+     <!--<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">-->
+    <link href="css/matching.css" rel="stylesheet" type="text/css">
+    
+    <!-- Fonts 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body id="page-top" class="index" onload="init()">
+	
+    <div class="container">
+
+        <div class="row-fluid">
+            <div class="span12">
+                <h1><br/></h1>
+            </div>
+        </div>
+        
+          <section>
+                <div class="container">
+                    <div class="row-fluid span12">
+                        <div id="questionBox" class="span6 pull-left" style="margin-top:-20px;">
+                        	<div id="" class="row-fluid">
+                                <div class="text-center question">
+                                	<img id="doorInterlock" class="clickable2" data-answerId="1" src="./media/images/door_interlock.png"/>
+                                    <img id="powerLed" class="clickable2" data-answerId="2" src="./media/images/power_led.png"/>
+                                    <img id="powerToggle1" class="clickable2" data-answerId="3" src="./media/images/power_toggle.png"/>
+                                    <img id="powerToggle2" class="clickable2" data-answerId="4" src="./media/images/power_toggle.png"/>
+                                    <img id="rotarySwitch" class="clickable2" data-answerId="5" src="./media/images/rotary_switch.png"/>
+                                	<img id="menuImg1" class="clickable2" data-answerId="6" src="./media/images/menu.png"/>
+                                    <img id="menuImg2" class="clickable2" data-answerId="7" src="./media/images/menu.png"/>
+                                    <img id="menuImg3" class="clickable2" data-answerId="8" src="./media/images/menu.png"/>
+                                	<img id="itemImg" class="clickable2" data-answerId="9" src="./media/images/item.png"/>
+                                	<!--<img id="iccBox" src="./media/images/LV_ICC_box_b_NO-LABELS.png"/>-->
+                                </div>
+                            </div><!-- /.row - bottom answers -->
+                         
+                        </div>
+                        
+                        <div class="span6 pull-right" id="rightSideCont" style="margin-top:-1%;">
+                        	<div id="rightSide">
+                            <div class="random">
+                                <div class="span3 answerBox clickable1" data-answerId="8">
+                                	<p>Select<br/>Pushbutton Switch</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="5">
+                                	<p>Rotary<br/>Switch</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="9">
+                                	<p>Reset<br/>Pushbutton Switch</p>
+                                </div>
+                            </div><!-- /.row - top answers -->
+                            
+                            <div class="random">
+                                <div class="span3 answerBox clickable1" data-answerId="7">
+                                	<p>Item<br/>Pushdown Switch</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="2">
+                                	<p>Power<br/>LED Indicator</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="3">
+                                	<p>Power<br/>Toggle Switch</p>
+                                </div>
+                            </div><!-- /.row - middle answers -->
+                            
+                            <div class="random">
+                                <div class="span3 answerBox item1 clickable1" data-answerId="1">
+                                	<p>Door<br/>Interlock Switch</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="6">
+                                	<p>Menu<br/>Pushdown Switch</p>
+                                </div>
+                                <div class="span3 answerBox clickable1" data-answerId="4">
+                                	<p>Utility Light<br/>Toggle Switch</p>
+                                </div>
+                            </div><!-- /.row - bottom answers -->
+                          
+                           </div><!-- close rightSide -->
+                  
+                        </div><!-- /pullright -->
+                        <div class="row-fluid span6 pull-right">
+                                <div class="text-center feedbackBox">
+                                    <p></p>
+                                </div>
+                           </div><!-- /.row - bottom answers --> 
+                </div><!-- /.row -->
+                
+            </div><!-- /.container-fluid -->
+          </section>
+    </div>
+    <!-- /.container -->
+
+    <div class="container" style="margin-top:20px;">
+        <footer>
+            <div class="row-fluid span12">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 1st American Systems and Services 2014</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+	
+</body>
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/soundjs-0.5.2.min.js"></script>
+    <script src="js/matching.js"></script>
+</html>
